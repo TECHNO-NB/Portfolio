@@ -170,14 +170,14 @@ nav .bx {
     width: 100%;
     margin-top: 5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .box{
-    width: 30rem;
-    height: 25rem;
-    background-color: crimson;
+    width: 25rem;
+    height: 20rem;
+    background-color:var(--color);
     display: flex;
     flex-direction: column;
     gap:5px;
@@ -187,21 +187,172 @@ nav .bx {
     color: #fff;
 
 }
+.box:hover{
+    background-color:crimson;
+    cursor: pointer;
+   
+}
 .box i{
-    color: #fff;
-    font-size: 8rem;
-     text-shadow: 0 0 20px blue;
+    color:#fff;
+    font-size: 6rem;
+     text-shadow: 0px 0px 10px rgb(85, 0, 255),
+     -0px -0px 10px rgb(85, 0, 255) ;
    
 }
 .box h4{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color:#fff;
 }
 .box p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:rgb(255, 255, 255);
     font-weight: bolder;
 }
+#Skills{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-padding-top: 50rem;
+    scroll-margin: 10rem;
+ 
+
+
+}
+#Skills .txt1{
+    width: 100%;
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+ 
+   
+}
+#Skills h1{
+    font-size: 8vh;
+    text-align: center;
+}
+#Skills .p-tag{
+    font-size: 4vh;
+    color:#f2785f;
+    font-weight: bolder;
+    text-align: center;
+}
+.skill-left {
+    width: 50%;
+    height: 100%;
+  padding: 9.8rem 10rem;
+   
+}
+.skill-left h3{
+    font-size: 2rem;
+}
+.skill-right{
+    width: 50%;
+    height: 100%;
+    padding: 7rem 10rem; 
+   
+    
+}
+.skill-right h6{
+    font-size:2.3rem ;
+     margin-top: 1.4rem;
+}
+
+
+.skill-left p{
+    font-size: 2vh;
+    margin-top: 0.5rem;
+}
+.skill-left button {
+    background-color: var(--color);
+    margin-top: 1rem;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+.range{
+   height: 0.8rem;
+   width:80%;
+   background-color: rgb(24, 23, 23);
+   position: relative;
+   
+}
+.range::after{
+    content: '';
+    top:50%;
+    left: 45%;
+    background-color: var(--color);
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 0.8rem;
+    position: absolute;
+}
+
+.range1{
+    height: 0.8rem;
+    width:80%;
+    background-color: rgb(24, 23, 23);
+    position: relative;
+    
+ }
+ .range1::after{
+     content: '';
+     top:50%;
+     left: 30%;
+     background-color: var(--color);
+     transform: translate(-50%,-50%);
+     width: 60%;
+     height: 0.8rem;
+     position: absolute;
+ }
+
+ .range2{
+    height: 0.8rem;
+    width:80%;
+    background-color: rgb(24, 23, 23);
+    position: relative;
+    
+ }
+ .range2::after{
+     content: '';
+     top:50%;
+     left: 20%;
+     background-color: var(--color);
+     transform: translate(-50%,-50%);
+     width: 40%;
+     height: 0.8rem;
+     position: absolute;
+ }
+ .range3{
+    height: 0.8rem;
+    width:80%;
+    background-color: rgb(24, 23, 23);
+    position: relative;
+    
+ }
+ .range3::after{
+     content: '';
+     top:50%;
+     left: 44%;
+     background-color: var(--color);
+     transform: translate(-50%,-50%);
+     width: 88%;
+     height: 0.8rem;
+     position: absolute;
+ }
+ 
+ 
+
+
+
+
+
+
 
 
 @media (max-width:600px) {
@@ -252,7 +403,7 @@ nav .bx {
   margin-right: 3rem;
     }
     .left h1{
-        font-size: 2rem;
+        font-size: rem;
     }
     .left h2{
         font-size: 1rem;
@@ -276,4 +427,45 @@ nav .bx {
     .box1{
          margin-top: -3rem;
     }
+    #SKills{
+  padding: none;
+  margin: none;
+  scroll-margin: -50rem;
+    }
+    .skill-left{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: none;
+      text-align: center;
+        margin: none;
+      
+       
+    }
+    #Skills h1{
+        margin-top: 38rem;
+    }
+    .skill-left p{
+        font-size: 10px;
+        
+    }
+    .skill-left h3{
+        font-size: 2rem;
+        margin-top: 4rem;
+        
+    }
+    .skill-right{
+        width: 100%;
+        margin-right: 14rem;
+    }
+    #Skills .txt1{
+       margin-top: 5rem;
+        flex-direction: column;
+        padding: none;
+    }
+    .skill-right div{
+        
+     width: 80vw;
+    }
+
 }
