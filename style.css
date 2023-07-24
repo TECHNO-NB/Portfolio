@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -18,7 +19,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
 
 }
@@ -80,7 +81,7 @@ nav .bx {
 }
 
 #Home {
-    height: calc(100vh - 10vh);
+    height:100vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -95,12 +96,14 @@ nav .bx {
     height: 100%;
     align-self: center;
     justify-self: center;
+   
 
 }
 
 .left .txt {
-    margin-top: 20%;
+    margin-top: 30%;
     padding: 5% 10%;
+
 }
 
 .left h1 {
@@ -143,10 +146,63 @@ nav .bx {
 
 .right img {
 
-    height: 90%;
-    width: 90%;
-    margin-top: 5%;
+    height: 80%;
+    width: 88%;
+    margin-top: 15%;
 }
+
+#Services{
+    height: 90vh;
+    width: 100%;
+   text-align: center;
+   padding: 5%;
+   text-align: center;
+}
+#Services h1{
+    font-size: 8vh;
+}
+#Services .p{
+    font-size: 4vh;
+    color:#f2785f;
+    font-weight: bolder;
+}
+.card{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 30rem;
+    height: 25rem;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: #fff;
+
+}
+.box i{
+    color: #fff;
+    font-size: 8rem;
+     text-shadow: 0 0 20px blue;
+   
+}
+.box h4{
+    font-size: 3.5rem;
+    color:#fff;
+}
+.box p{
+    font-size: 1.5rem;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
 
 @media (max-width:600px) {
     nav ul {
@@ -192,8 +248,32 @@ nav .bx {
         width: 100%;
 
     }
+    .left .txt{
+  margin-right: 3rem;
+    }
+    .left h1{
+        font-size: 2rem;
+    }
+    .left h2{
+        font-size: 1rem;
+    }
+   
 
     .right {
         width: 100%;
+    }
+    .right img{
+        margin-top: -1rem;
+        height: 100%;
+    }
+    .card{
+        gap:1rem
+    }
+    #Services h1{
+        font-size: 8vh;
+        margin-top: 8rem;
+    }
+    .box1{
+         margin-top: -3rem;
     }
 }

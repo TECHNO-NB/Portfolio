@@ -1,5 +1,6 @@
 const icon=document.getElementById("icon");
 const ul=document.querySelector("ul");
+const a=document.querySelectorAll("ul li a");
 let active=true;
 
 
@@ -13,6 +14,14 @@ const hideMenu=()=>{
     icon.classList.replace("bx-x",'bx-menu-alt-right');
     active=true;
 }
+
+a.forEach(i =>{
+ i.onclick=()=>{
+    ul.classList.remove('show');
+icon.classList.replace("bx-x",'bx-menu-alt-right');
+active=true;
+ }
+})
 
 
 
