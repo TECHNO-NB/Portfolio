@@ -209,11 +209,9 @@ nav .bx {
     font-weight: bolder;
 }
 #Skills{
-    height: 90vh;
+    height: 60vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    scroll-padding-top: 50rem;
+   scroll-padding-top: 50rem;
     scroll-margin: 10rem;
  
 
@@ -222,19 +220,18 @@ nav .bx {
 #Skills .txt1{
     width: 100%;
     display: flex;
-    height: 80%;
+    height: 100%;
     align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
+   justify-content: space-evenly;
  
    
 }
 #Skills h1{
-    font-size: 8vh;
+    font-size: 5rem;
     text-align: center;
 }
 #Skills .p-tag{
-    font-size: 4vh;
+    font-size: 2vw;
     color:#f2785f;
     font-weight: bolder;
     text-align: center;
@@ -242,7 +239,12 @@ nav .bx {
 .skill-left {
     width: 50%;
     height: 100%;
-  padding: 9.8rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+  margin-top: 19rem;
+  
    
 }
 .skill-left h3{
@@ -280,6 +282,7 @@ nav .bx {
    width:80%;
    background-color: rgb(24, 23, 23);
    position: relative;
+   z-index: -30;
    
 }
 .range::after{
@@ -291,6 +294,7 @@ nav .bx {
     width: 90%;
     height: 0.8rem;
     position: absolute;
+    z-index: -30;
 }
 
 .range1{
@@ -298,6 +302,7 @@ nav .bx {
     width:80%;
     background-color: rgb(24, 23, 23);
     position: relative;
+    z-index: -30;
     
  }
  .range1::after{
@@ -316,6 +321,7 @@ nav .bx {
     width:80%;
     background-color: rgb(24, 23, 23);
     position: relative;
+    z-index: -30;
     
  }
  .range2::after{
@@ -333,6 +339,7 @@ nav .bx {
     width:80%;
     background-color: rgb(24, 23, 23);
     position: relative;
+    z-index: -20;
     
  }
  .range3::after{
@@ -367,6 +374,7 @@ nav .bx {
         flex-direction: column;
         align-items: center;
         transition: 0.5s ease-in-out;
+        z-index: 10;
 
 
     }
@@ -420,9 +428,10 @@ nav .bx {
     .card{
         gap:1rem
     }
+    
     #Services h1{
         font-size: 8vh;
-        margin-top: 8rem;
+        margin-top: 3rem;
     }
     .box1{
          margin-top: -3rem;
@@ -430,33 +439,41 @@ nav .bx {
     #SKills{
   padding: none;
   margin: none;
-  scroll-margin: -50rem;
+   height: 70vh;
     }
     .skill-left{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        padding: none;
+         width: 100vw;
+        padding:none;
       text-align: center;
         margin: none;
+        height: 100%;
+        padding-right: 1.5rem;
+
       
        
     }
     #Skills h1{
         margin-top: 38rem;
+        font-size: 4rem;
     }
     .skill-left p{
         font-size: 10px;
         
     }
+    #Skills .p-tag{
+        font-size: 8vw;
+        
+    }
     .skill-left h3{
         font-size: 2rem;
-        margin-top: 4rem;
+        margin-top: -8rem;
         
     }
     .skill-right{
         width: 100%;
-        margin-right: 14rem;
+        height: 100%;
+        margin-right: 15.5rem;
+        margin-top: -4rem;
     }
     #Skills .txt1{
        margin-top: 5rem;
@@ -464,8 +481,7 @@ nav .bx {
         padding: none;
     }
     .skill-right div{
-        
-     width: 80vw;
+        width: 80vw;
     }
 
 }
